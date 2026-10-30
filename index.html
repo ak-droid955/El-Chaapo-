@@ -183,8 +183,13 @@
       const map = L.map('elchapo-map', {
         center: [12.980, 77.630],
         zoom: 11,
-        zoomControl: true,
-        scrollWheelZoom: true
+        minZoom: 11,
+        maxZoom: 11,
+        zoomControl: false,
+        scrollWheelZoom: false,
+        doubleClickZoom: false,
+        touchZoom: false,
+        boxZoom: false
       });
 
       // Esri dark gray canvas: free, no API key (CARTO now requires one)
@@ -264,8 +269,13 @@
       const map = L.map('elchapo-map', {
         center: [12.970, 77.660],
         zoom: 12,
-        zoomControl: true,
-        scrollWheelZoom: true
+        minZoom: 12,
+        maxZoom: 12,
+        zoomControl: false,
+        scrollWheelZoom: false,
+        doubleClickZoom: false,
+        touchZoom: false,
+        boxZoom: false
       });
 
       // Esri dark gray canvas: free, no API key (CARTO now requires one)
