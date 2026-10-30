@@ -92,7 +92,10 @@
     const offset  = (rect.top + rect.height / 2) - vpH / 2;
 
     
-    spotBg.style.transform = `translateY(${offset * 0.40}px)`;
+    // Clamp to the 30% travel room in .spotlight-parallax-bg so no edge shows
+    const room    = rect.height * 0.30;
+    const shift   = Math.max(-room, Math.min(room, offset * 0.40));
+    spotBg.style.transform = `translateY(${shift}px)`;
 
     
     if (spotImgFront) spotImgFront.style.transform = `rotate(2.5deg)  translateY(${offset * -0.12}px)`;

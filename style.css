@@ -513,6 +513,7 @@ address {
   height: 100vh;
   min-height: 640px;
   overflow: hidden;
+  background: var(--dark);
   display: flex;
   align-items: center;
   justify-content: center;
